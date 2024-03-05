@@ -1,0 +1,164 @@
+/* Contenedor principal img */
+main {
+   margin-top: 60px; 
+   position: relative;
+   z-index: 1;
+}
+
+/* Imagen principal */
+.imagen-principal-noticias {
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+}
+
+/* Hacemos la imagen ovalada por abajo */
+.imagen-principal-noticias img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-bottom-left-radius: 30% 5%;
+   border-bottom-right-radius: 30% 5%;
+}
+
+.imagen-principal-noticias h2 {
+   text-align: center;
+   margin-top: 3rem;
+   margin-bottom: 2.5rem;
+}
+
+
+/* Creamos los estilos para las noticias */
+.noticia {
+   margin: 1rem 9rem;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   
+}
+
+.titulo {
+   margin-top: 0;
+   text-align: center;
+}
+
+.fecha {
+   font-style: italic;
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.contenido-imagen {
+   display: flex;
+}
+
+.contenido {
+   display: flex;
+   flex-direction: row;
+   text-align: justify;
+}
+
+.imagen {
+   flex: 0 0 40%;
+   margin-right: 20px;
+}
+
+.imagen img {
+   max-width: 100%;
+   height: auto;
+   width: 100%;
+}
+
+.texto {
+   flex: 1;
+   display: flex;
+   align-items: center; 
+   margin: 2rem;
+}
+
+/* FOOTER */
+footer {
+   position: relative;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #e3e3e3;
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+/* Encabezados */
+footer h3 {
+   color: black; 
+}
+
+.footer-section {
+   text-align: center;
+   margin: 10px;
+   font-size: 11px;
+   color: black;
+}
+
+ul.footer-links {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+ul.footer-links li a {
+   text-decoration: none;
+   transition: color 0.3s ease;
+   position: relative;
+   color: black;
+}
+
+ul.footer-links li a::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background-color: #575757;
+   bottom: -3px;
+   left: 0;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+ul.footer-links li a:hover::after {
+   transform: scaleX(1);
+}
+
+ul.footer-links li:last-child {
+   margin-top: auto;
+}
+
+.footer-section img {
+   margin-bottom: 20px;
+   height: 40px;
+}
+
+/*Imágenes redes sociales*/
+footer .social-icons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+footer .social-icons a {
+   display: flex;
+   align-items: center;
+}
+
+footer .social-icons img {
+   height: 22px;
+   width: 22px;
+   margin: 10px;
+}

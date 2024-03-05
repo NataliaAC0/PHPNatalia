@@ -1,0 +1,240 @@
+.espacio {
+   margin-top: 6rem;
+}
+
+h2 {
+   text-align: center;
+   margin-top: 1rem;
+}
+.noticias-mysql {
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f9f9f9;
+   min-width: 60%;
+   max-width: 90%;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 3rem;
+}
+
+.noticias-mysql .noticia {
+   margin: 1rem 9rem;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.noticias-mysql .titulo {
+   margin-top: 0;
+   text-align: center;
+}
+
+.noticias-mysql .fecha {
+   font-style: italic;
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.noticias-mysql .contenido-imagen {
+   display: flex;
+}
+
+.noticias-mysql .contenido {
+   display: flex;
+   flex-direction: row;
+   text-align: justify;
+}
+
+.noticias-mysql .imagen {
+   flex: 0 0 40%;
+   margin-right: 20px;
+}
+
+.noticias-mysql .imagen img {
+   max-width: 100%;
+   height: auto;
+   width: 100%;
+}
+
+.noticias-mysql .texto {
+   flex: 1;
+   display: flex;
+   align-items: center; 
+   margin: 2rem;
+}
+
+.crear-noticia-section {
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f9f9f9;
+   min-width: 90%;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 3rem;
+}
+
+.crear-noticia-section input[type="text"],
+.crear-noticia-section textarea {
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+/* Botones */
+button[type="submit"] {
+   background-color: #3f6491;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%;
+}
+
+button[type="submit"]:hover {
+   background-color: #2d4a6e;
+}
+
+/* Eliminar  */
+button[name="eliminar_noticia"] {
+   background-color: #ad031a;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%;
+}
+
+button[name="eliminar_noticia"]:hover {
+   background-color: #910316;
+}
+
+
+.modificar-noticia-section {
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f9f9f9;
+   min-width: 90%;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 3rem;
+}
+
+.modificar-noticia-section label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.modificar-noticia-section select,
+.modificar-noticia-section input[type="text"],
+.modificar-noticia-section textarea {
+   width: calc(100% - 20px);
+   margin-bottom: 10px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+
+.eliminar-noticia-section {
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f9f9f9;
+   min-width: 90%;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 3rem;
+}
+
+.eliminar-noticia-section select {
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+ /** FOOTER */
+ footer {
+   background-color: #e3e3e3;
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 1000;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Encabezados */
+footer h3 {
+   color: black;
+}
+
+.footer-section {
+   text-align: center;
+   margin: 10px;
+   font-size: 11px;
+   color: black;
+}
+
+ul.footer-links {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+ul.footer-links li a {
+   text-decoration: none;
+   transition: color 0.3s ease;
+   position: relative;
+   color: black;
+}
+
+ul.footer-links li a::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background-color: #575757;
+   bottom: -3px;
+   left: 0;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+ul.footer-links li a:hover::after {
+   transform: scaleX(1);
+}
+
+ul.footer-links li:last-child {
+   margin-top: auto;
+}
+
+.footer-section img {
+   margin-bottom: 20px;
+   height: 40px;
+}
+
+/*Imágenes redes sociales*/
+footer .social-icons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+footer .social-icons a {
+   display: flex;
+   align-items: center;
+}
+
+footer .social-icons img {
+   height: 22px;
+   width: 22px;
+   margin: 10px;
+}

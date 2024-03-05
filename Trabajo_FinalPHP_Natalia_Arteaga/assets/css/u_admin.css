@@ -1,0 +1,199 @@
+.espacio {
+   margin-top: 9rem;
+}
+
+
+.crear {
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      min-width: 60%;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem
+}
+
+.modificar {
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      min-width: 60%;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+   }
+
+.eliminar {
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      min-width: 60%;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+   }
+
+h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form input[type="date"] {
+   width: calc(100% - 22px);
+   padding: 10px;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+/* botones */
+form input[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   background-color: #3f6491;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+   background-color: #2d4a6e;
+}
+
+/* boton diferente eliminación */
+input[type="submit"][name="eliminar_usuario"] {
+   background-color: #ad031a;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+input[type="submit"][name="eliminar_usuario"]:hover {
+   background-color: #910316;
+}
+
+
+section.modificar form input[type="text"],
+section.modificar form input[type="date"],
+section.modificar form select {
+   width: calc(100% - 22px);
+   padding: 10px;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+section.modificar form input[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   background-color: #3f6491;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+section.modificar form input[type="submit"]:hover {
+   background-color: #2d4a6e;
+}
+
+
+/** FOOTER */
+footer {
+   background-color: #e3e3e3;
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Encabezados */
+footer h3 {
+   color: black;
+}
+
+.footer-section {
+   text-align: center;
+   margin: 10px;
+   font-size: 11px;
+   color: black;
+}
+
+ul.footer-links {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+ul.footer-links li a {
+   text-decoration: none;
+   transition: color 0.3s ease;
+   position: relative;
+   color: black;
+}
+
+ul.footer-links li a::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background-color: #575757;
+   bottom: -3px;
+   left: 0;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+ul.footer-links li a:hover::after {
+   transform: scaleX(1);
+}
+
+ul.footer-links li:last-child {
+   margin-top: auto;
+}
+
+.footer-section img {
+   margin-bottom: 20px;
+   height: 40px;
+}
+
+/*Imágenes redes sociales*/
+footer .social-icons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+footer .social-icons a {
+   display: flex;
+   align-items: center;
+}
+
+footer .social-icons img {
+   height: 22px;
+   width: 22px;
+   margin: 10px;
+}

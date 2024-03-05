@@ -1,0 +1,125 @@
+.centrado {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Esto centra verticalmente el contenido */
+}
+
+section {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   max-width: 90%;
+   min-width: 60%;
+   text-align: center;
+}
+
+p {
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+a {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 10px 20px;
+   text-decoration: none;
+   background-color: #3f6491;
+   color: #fff;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+   margin-bottom: 2rem;
+}
+
+a:hover {
+   background-color: #2d4a6e;
+}
+
+
+
+
+/* FOOTER */
+footer {
+   background-color: #e3e3e3;
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 1000;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Encabezados */
+footer h3 {
+   color: black;
+}
+
+.footer-section {
+   text-align: center;
+   margin: 10px;
+   font-size: 11px;
+   color: black;
+}
+
+ul.footer-links {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+ul.footer-links li a {
+   text-decoration: none;
+   transition: color 0.3s ease;
+   position: relative;
+   color: black;
+}
+
+ul.footer-links li a::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background-color: #575757;
+   bottom: -3px;
+   left: 0;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+ul.footer-links li a:hover::after {
+   transform: scaleX(1);
+}
+
+ul.footer-links li:last-child {
+   margin-top: auto;
+}
+
+.footer-section img {
+   margin-bottom: 20px;
+   height: 40px;
+}
+
+/*Imágenes redes sociales*/
+footer .social-icons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+footer .social-icons a {
+   display: flex;
+   align-items: center;
+}
+
+footer .social-icons img {
+   height: 22px;
+   width: 22px;
+   margin: 10px;
+}
